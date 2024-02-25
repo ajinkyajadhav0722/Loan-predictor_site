@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./static/style.css" rel="stylesheet">
+    <title>Loan predictor</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-color">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">LOAN predictor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="bg-main bg-color hero-section">
+        <div class="container">
+            <div class="row mb-1 ">
+                <div class="d-flex flex-column align-items-start justify-content-center col-xl-6 xol-lg-6 col-md-12 col-12 order-1 order-lg-0 text-md-start text-center">
+                    <h1 class=" text-capitalize fw-bolder text-white">
+                       <br>LOAN PREDICTOR
+                   
+    
+                    <div class="text-center w-100 text-md-start">
+                        <button class="btn btn-primary px-5 py-2 " data-bs-offset="0,5" data-bs-placement="top"
+                                data-bs-title="Get Best Services" data-bs-toggle="tooltip">GET STARTED!
+                        </button>
+                    </div>
+    
+                </div>
+    
+                
+    
+            </div>
+    
+        </div>
+        <div class="custom-shape-divider-bottom-1704883805">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <div style="text-align: center;">
+        <h1>Lets Predict</h1>
+    <form class="form-horizontal" action = "/predict/" method="post">
+        <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div style="margin-bottom: 20px;">
+                <label for="Gender">Gender:</label>
+                <input type="text" id="Gender" name="Gender" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Married">Married:</label>
+                <input type="text" id="Married" name="Married" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Education">Education:</label>
+                <input type="text" id="Education" name="Education" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Self_Employed">Self Employed:</label>
+                <input type="text" id="Self_Employed" name="Self_Employed" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="ApplicantIncome">Applicant Income:</label>
+                <input type="text" id="ApplicantIncome" name="ApplicantIncome" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="CoapplicantIncome">Coapplicant Income:</label>
+                <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="LoanAmount">Loan Amount:</label>
+                <input type="text" id="LoanAmount" name="LoanAmount" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Loan_Amount_Term">Loan Amount Term:</label>
+                <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Credit_History">Credit History:</label>
+                <input type="text" id="Credit_History" name="Credit_History" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="Property_Area">Property Area:</label>
+                <input type="text" id="Property_Area" name="Property_Area" style="width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ddd; border-radius: 5px; outline: none; transition: border-color 0.5s ease-in-out;">
+            </div>
+
+            <div>
+                <button type="submit" style="padding: 12px 24px; font-size: 16px; background-color: #3498db; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s ease-in-out;">Predict</button>
+            </div>
+        </div>
+    </form>
+
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
